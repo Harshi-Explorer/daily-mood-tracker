@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Daily Mood Tracker</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <h1>Daily Mood Tracker</h1>
-    <p id="date"></p>
     <h2>How are you feeling today?</h2>
-
+    <p id="date"></p>
     <div class="mood-buttons">
-      <button onclick="selectMood('Happy')">Happy</button>
-      <button onclick="selectMood('Sad')">Sad</button>
-      <button onclick="selectMood('Angry')">Angry</button>
-      <button onclick="selectMood('Excited')">Excited</button>
-      <button onclick="selectMood('Calm')">Calm</button>
+      <button onclick="selectMood('Happy')"><img src="https://i.imgur.com/FpPbhw4.png" alt="Happy"> Happy</button>
+      <button onclick="selectMood('Sad')"><img src="https://i.imgur.com/BXK6hWv.png" alt="Sad"> Sad</button>
+      <button onclick="selectMood('Angry')"><img src="https://i.imgur.com/8iIm8J1.png" alt="Angry"> Angry</button>
+      <button onclick="selectMood('Excited')"><img src="https://i.imgur.com/7iyXW5D.png" alt="Excited"> Excited</button>
+      <button onclick="selectMood('Calm')"><img src="https://i.imgur.com/hhvM7XN.png" alt="Calm"> Calm</button>
     </div>
-
     <div class="output" id="output"></div>
   </div>
 
