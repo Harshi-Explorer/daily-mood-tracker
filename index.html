@@ -10,13 +10,15 @@
     <h1>Daily Mood Tracker</h1>
     <p>How are you feeling today?</p>
     <div class="mood-buttons">
-      <button onclick="selectMood('happy')">Happy</button>
-      <button onclick="selectMood('sad')">Sad</button>
-      <button onclick="selectMood('angry')">Angry</button>
-      <button onclick="selectMood('excited')">Excited</button>
+      <button class="mood-btn" data-mood="Happy">Happy</button>
+      <button class="mood-btn" data-mood="Sad">Sad</button>
+      <button class="mood-btn" data-mood="Angry">Angry</button>
+      <button class="mood-btn" data-mood="Excited">Excited</button>
+      <button class="mood-btn" data-mood="Calm">Calm</button>
     </div>
-    <p id="selectedMood"></p>
+    <p id="result"></p>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
