@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const result = document.getElementById("result");
 
   moodButtons.forEach(button => {
-    button.addEventListener("click", function ()  {
+    button.addEventListener("click", function () {
       const mood = this.getAttribute("data-mood");
       result.textContent = `You selected: ${mood}`;
     });
