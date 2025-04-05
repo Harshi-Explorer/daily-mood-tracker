@@ -1,35 +1,37 @@
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  background-color: #f9f9f9;
-}
-
-h1 {
-  color: #444;
-}
-
-.mood-buttons {
-  margin: 20px 0;
-}
-
-.mood-btn {
-  padding: 10px 20px;
-  margin: 5px;
-  border: none;
-  background-color: #3498db;
-  color: white;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.mood-btn:hover {
-  background-color: #2980b9;
-}
-
-#result {
-  margin-top: 20px;
-  font-size: 18px;
+  background-color: #f2f8fc;
   color: #333;
+  text-align: center;
+  padding: 30px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.mood-buttons button {
+  margin: 8px;
+  padding: 10px 18px;
+  border: none;
+  background-color: #4c9aff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mood-buttons button:hover {
+  background-color: #1d70ff;
+}
+
+.output {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
 }

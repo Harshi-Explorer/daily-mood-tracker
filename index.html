@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Daily Mood Tracker</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1>Daily Mood Tracker</h1>
-  <p>How are you feeling today?</p>
+  <div class="container">
+    <h1>Daily Mood Tracker</h1>
+    <p id="date"></p>
+    <h2>How are you feeling today?</h2>
 
-  <div class="mood-buttons">
-    <button class="mood-btn" data-mood="Happy">Happy</button>
-    <button class="mood-btn" data-mood="Sad">Sad</button>
-    <button class="mood-btn" data-mood="Angry">Angry</button>
-    <button class="mood-btn" data-mood="Excited">Excited</button>
-    <button class="mood-btn" data-mood="Calm">Calm</button>
+    <div class="mood-buttons">
+      <button onclick="selectMood('Happy')">Happy</button>
+      <button onclick="selectMood('Sad')">Sad</button>
+      <button onclick="selectMood('Angry')">Angry</button>
+      <button onclick="selectMood('Excited')">Excited</button>
+      <button onclick="selectMood('Calm')">Calm</button>
+    </div>
+
+    <div class="output" id="output"></div>
   </div>
-
-  <p id="result"></p>
 
   <script src="script.js"></script>
 </body>
